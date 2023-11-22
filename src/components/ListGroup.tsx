@@ -1,14 +1,29 @@
-export function ListGroup() {
-    const taj = []
-    return (
-        <>
-            <h1>List Group</h1>
-            <ol className="list-group">
-                <li className="list-group-item">TajAlasfiyaa</li>
-                <li className="list-group-item">i</li>
-                <li className="list-group-item">adf</li>
-                <li className="list-group-item active ">sdaf </li>
-            </ol>
-        </>
-    );
+import { useState } from "react";
+interface Props {
+  data: string[];
+  title: string;
+  onSelectItem: (item: string) => void;
+}
+export function ListGroup({ data, title, onSelectItem }: Props) {
+  const [selected, setSelected] = useState(-1);
+
+  return (
+    <>
+      <h1>{title}</h1>
+      <ol className="list-group">
+        {data.map((list, index) => (
+          <ol
+            className={(selected == index)
+              ? "list-group-item active"
+              : "list-group-item"}
+            onClick={() => {
+              onSelectItem(list);
+            }}
+          >
+            {list}
+          </ol>
+        ))}
+      </ol>
+    </>
+  );
 }
