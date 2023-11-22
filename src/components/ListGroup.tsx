@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "./Button";
 interface Props {
   data: string[];
   title: string;
@@ -10,6 +11,7 @@ export function ListGroup({ data, title, onSelectItem }: Props) {
   return (
     <>
       <h1>{title}</h1>
+      <Button type="danger" >test for this </Button>
       <ol className="list-group">
         {data.map((list, index) => (
           <ol
