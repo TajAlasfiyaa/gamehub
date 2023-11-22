@@ -7,7 +7,7 @@ function App() {
   };
   return (
     <>
-      <Alerts message="lorem eplsun" type="secondary" />
+      <Alerts message="lorem eplsun" type="secondary" show={false} />
       <ListGroup
         title="Helle WOrld"
         data={taj}

@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react'
 interface Props {
-    children : ReactNode
+    children : any
     type?: string
 }
 const Button = ({children , type: color = "primary"}:Props) => {
