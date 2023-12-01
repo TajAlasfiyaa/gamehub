@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import ExpenseList from "./components/ExpenseList";
 import ExpenseFillter from "./components/ExpenseFillter";
 import ExpenseForm from "./components/ExpenseForm";
-
 const Expense = () => {
   const [expenses, setExpenses] = useState([
     { description: "body of foot", amount: 24, category: "banana", id: 1 },
