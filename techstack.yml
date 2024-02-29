@@ -2,7 +2,7 @@ repo_name: TajAlasfiyaa/gamehub
 report_id: f2461c82bea2678de656d45164b37089
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T08:26:22+00:00'
+timestamp: '2024-02-29T19:00:01+00:00'
 requested_by: TajAlasfiyaa
 provider: github
 branch: master
@@ -250,6 +250,13 @@ tools:
   last_updated_by: TajAlasfiyaa Ishag
   last_updated_on: 2023-11-21 04:12:25.000000000 Z
   vulnerabilities:
+  - name: Vite dev server option `server.fs.deny` can be bypassed when hosted on case-insensitive
+      filesystem
+    cve_id: CVE-2024-23331
+    cve_url: https://github.com/advisories/GHSA-c24v-8rfc-w8vw
+    detected_date: Jan 20
+    severity: high
+    first_patched: 4.5.2
   - name: Vite XSS vulnerability in `server.transformIndexHtml` via URL payload
     cve_id: CVE-2023-49293
     cve_url: https://github.com/advisories/GHSA-92r3-m2mg-pj97
